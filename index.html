@@ -1,447 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-
-    
-	<link rel="shortcut icon" href="img/helicopter-64.ico" type="image/x-icon">
-    
-   
+<head>
+    <link rel="shortcut icon" href="img/helicopter-64.ico" type="image/x-icon">
     <meta name="author" content="Novikov">
-
-	
-	
-	<!--
+    <!--
   The following 2 meta tags *must* come first in the <head>
   to consistently ensure proper document rendering.
   Any other head element should come *after* these tags.
 -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--
+      Allows control over where resources are loaded from.
+      Place as early in the <head> as possible, as the tag
+      only applies to resources that are declared after it.
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+    <!-- Name of web application (only should be used if the website is used as an app) -->
+    <meta name="application-name" content="Application Name">
+    <!-- Theme Color for Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#4285f4">
+    <!-- Short description of the document (limit to 150 characters) -->
+    <!-- This content *may* be used as a part of search engine results. -->
+    <meta name="description" content="It's the best resume in the World.">
+    <!-- Control the behavior of search engine crawling and indexing -->
+    <meta name="robots" content="index,follow"><!-- All Search Engines -->
+    <meta name="googlebot" content="index,follow"><!-- Google Specific -->
+    <!-- Tells Google not to show the sitelinks search box -->
+    <meta name="google" content="nositelinkssearchbox">
+    <!-- Tells Google not to provide a translation for this document -->
+    <meta name="google" content="notranslate">
+    <!-- Identify the software used to build the document (i.e. - WordPress, Dreamweaver) -->
+    <meta name="generator" content="WebStorm IDE">
+    <!-- Short description of your document's subject -->
+    <meta name="subject" content="Resume">
+    <!-- Gives a general age rating based on the document's content -->
+    <meta name="rating" content="General">
+    <!-- Allows control over how referrer information is passed -->
+    <meta name="referrer" content="no-referrer">
 
-<!--
-  Allows control over where resources are loaded from.
-  Place as early in the <head> as possible, as the tag  
-  only applies to resources that are declared after it.
--->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
-
-<!-- Name of web application (only should be used if the website is used as an app) -->
-<meta name="application-name" content="Application Name">
-
-<!-- Theme Color for Chrome, Firefox OS and Opera -->
-<meta name="theme-color" content="#4285f4">
-
-<!-- Short description of the document (limit to 150 characters) -->
-<!-- This content *may* be used as a part of search engine results. -->
-<meta name="description" content="It's the best resume in the World.">
-
-<!-- Control the behavior of search engine crawling and indexing -->
-<meta name="robots" content="index,follow"><!-- All Search Engines -->
-<meta name="googlebot" content="index,follow"><!-- Google Specific -->
-
-<!-- Tells Google not to show the sitelinks search box -->
-<meta name="google" content="nositelinkssearchbox">
-
-<!-- Tells Google not to provide a translation for this document -->
-<meta name="google" content="notranslate">
- 
-
-<!-- Identify the software used to build the document (i.e. - WordPress, Dreamweaver) -->
-<meta name="generator" content="WebStorm IDE">
-
-<!-- Short description of your document's subject -->
-<meta name="subject" content="Resume">
-
-<!-- Gives a general age rating based on the document's content -->
-<meta name="rating" content="General">
-
-<!-- Allows control over how referrer information is passed -->
-<meta name="referrer" content="no-referrer">
- 
-	
-	
-	
     <title>Novikov — Résumé</title>
-
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
- 
     <!-- Custom styles for this template -->
     <link href="css/resume.css" rel="stylesheet">
+</head>
 
-  </head>
+<body id="page-top">
 
-  <body id="page-top">
-
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">MY RÉSUMÉ</span>
         <span class="d-none d-lg-block">
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="Novikov's Photo">
         </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">Intro</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Reviews</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Timeline</a>
-          </li>  
-		  <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contacts">Contacts</a>
-          </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#about">Intro</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#interests">Reviews</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#awards">Timeline</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#contacts">Contacts</a>
+            </li>
         </ul>
-      </div>
-    </nav>
-
-    <div class="container-fluid p-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-        <div class="my-auto">
-          <h1 class="mb-0">Sergiy
-            <span class="text-primary">Novikov</span>
-          </h1>
-          <div class="subheading mb-5">Front-End web developer
-             
-			
-          </div>
-           
-		  
-		   <ul class="fa-ul  mb-0 non-marked bones-marked">
-		   <li>I like to code because I really enjoy building things (from "lego" to chair to websites and JS-apps)</li>
-		    <li>And I  like to be able to take an idea and make it happen on the screen</li>
-		    <li>Coding is my passion because coding is the way of the future</li>
-		    <li>And I try to make this world a better place</li>
-		    <li>And may I tell you a secret? I have a dream to get a job with a good pay )))</li>
-		   </ul>
-		  
-		   
-       
-        </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-        <div class="my-auto">
-          <h2 class="mb-5">Experience</h2>
-
-		  
-		  
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h4 class="mb-0">Web Developer</h3>
-              <div class="subheading mb-3">Community of Journalists (Kharkiv,&nbsp;Ukraine) </div>
-             <ul class="fa-ul mb-0 trng-marked non-marked">
-        
-             <li>Designed and developed entire business website for Community of journalists. Sole developer and designer for a small group of community newspapers</li> 
-			 <li>HTML, CSS coding of front-end interfaces - including cross-browser support and unit testing to ensure quality work</li> 
-			 <li>Parse PSD's into HTML and CSS templates (convert PSD files to a working website with PHP, JavaScript, HTML5 and CSS3)</li> 
-			 <li>Used HTML5 semantic tags and CSS3 features for the development</li> 
-			 <li>Created some original pure CSS images: <a href="https://github.com/serega1ua/TankModules">github.com/serega1ua/TankModules</a> </li> 
-				
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">May 2016 - Present</span>
-            </div>
-          </div>
-
-        
-		
-		
-		
-		  <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h4 class="mb-0">Creator of E-books</h3>
-              <div class="subheading mb-3">Digital Services Publisher (Riga,&nbsp;Latvia)</div>
-             <ul class="fa-ul mb-0 trng-marked non-marked">
-        
-             <li>Created 550 eBooks in HTML format  for all major Ereaders & devices, including Nook, Kindle (for example <a href="https://www.amazon.com/s/ref=dp_byline_sr_ebooks_2?ie=UTF8&text=Sergio+Novikoff&search-alias=digital-text&field-author=Sergio+Novikoff&sort=relevancerank">here</a> and <a href="https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Ddigital-text&field-keywords=engBook&rh=n%3A133140011%2Ck%3AengBook">here</a>)</li> 
-			 <li>Created ebooks in HTML format  for real clients that can be read on multiple devices ranging from phones through to Windows desktops</li> 
-			 	
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">May 2012 - December 2016</span>
-            </div>
-          </div>
-
-        
-		
-
-       
-          </div>
-
-       
-
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-        <div class="my-auto">
-          <h2 class="mb-5">Education</h2>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h4 class="mb-0">Faculty of Information Systems and&nbsp;Technology | European&nbsp;university, Kyiv, Ukraine</h4>
-              <div class="subheading mb-3">Bachelor of Science</div>
-              <div>Bachelor of Science in Software Engineering(BSSE), Higher education  </div>
-              
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">August 2008 - May 2012</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h4 class="mb-0">IT School “CyberBionic&nbsp;Systematics”, Kyiv, Ukraine</h4>
-              <div class="subheading mb-3">JS Coder</div>
-               <div>Programmer  in JavaScript  </div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">August 2014 - September 2014</span>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <div class="my-auto">
-          <h2 class="mb-5">Skills</h2>
-
-           <div class="subheading mb-3">Summary of Skills:</div>
-           
-		   <ul class="fa-ul mb-0 bullet-white-marked non-marked">
-        
-            <li>
-            
-             	 	Front-end Developer with 2+ years of experience designing, developing, and managing complex e-commerce sites. Specializes in JS and responsive design
- 
-
-  
-</li>
-			<li>
-            
-            	 	Intermediate English level (written and spoken) 
- 	 
- 	 </li>
-			<li>
-            
-              Strong understanding of industry trends and content management systems
- 	 
- 	 </li>
-			<li>
-            
-            Ability to improvise, learn new skills in short terms, self-motivated and result-oriented
- 	 
- 	 </li>
-		 
-			 
-			 
-			  
-          </ul>
-		  
-		  
-		   
-
-          <div class="subheading mb-3 margin-topper">Technical Skills:</div>
-          <ul class="fa-ul mb-0 bullet-white-marked non-marked">
-        
-            <li>
-            
-             	Front-end: CSS3, HTML5, XML, web standards and accessibility, cross-browser compatibility, JSON with padding
-  
-</li>
-			<li>
-            
-            	Programming/scripting languages: JavaScript (ES6, jQuery, Bootstrap), basic knowledge of SQL
- 	 </li>
-			<li>
-            
-              DB: Oracle
- 	 </li>
-			<li>
-            
-              Development  tools: WebStorm, Note++, Sublime Text, Photoshop/Fireworks, GitHub Desktop
- 	 </li>
-			
-			<li>
-            
-              APIs: Web Storage API, JSON API, Web-Storage API, Web Workers API, Geolocation API, Google Maps JavaScript API</li>
-			  
-			<li>
-            
-              Version control systems: Git</li>
-			 
-			  
-          </ul>
-        </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-        <div class="my-auto">
-          <h2 class="mb-5">Some Funny Reviews</h2>
-
- 	<p>I have consistently received positive reviews regarding my job performance:</p>
-  
-		   <ul class="fa-ul  mb-0 non-marked music-marked">
-		       <li><a href="https://www.amazon.com/dp/B00C4L9B6C">www.amazon.com/dp/B00C4L9B6C</a> &#x2935;<br> 
-“very enjoyable and satisfying“</li>
-		    <li><a href="https://www.amazon.com/dp/B00B9GY3IO">www.amazon.com/dp/B00B9GY3IO</a> &#x2935;<br>  
-“layout are very easy to read”,  “with an easy to access look-up system”</li>
-		 
-		    <li><a href="https://www.amazon.com/dp/B00C4I83X2">www.amazon.com/dp/B00C4I83X2</a> &#x2935;<br>  
-“it is functional“</li>
-		    <li><a href="https://www.amazon.com/dp/B014GBBQIS">www.amazon.com/dp/B014GBBQIS</a> &#x2935;<br> 
-“Not only does author Novikov provide the phrases in Cyrillic Russian but also in phonetic (Latin) characters to help those who cannot read Cyrillic. It also helps greatly that in the Phonetic translations, Novikov underlines accented syllables for the students to help them in the area of pronunciation. Beats all the Russian phrase books I've purchased in the past.” 
-</li>
-		   </ul>
-		  
-	 
- 
-  
- 
-
-		  
-        </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-        <div class="my-auto">
-          <h2 class="mb-5">Timeline</h2>
-          <ul class="fa-ul mb-0 music-second-marked non-marked">
-            <li>
-              		1998 Graduated from National Law Academy 
-   
-			  </li>
-			 <li>
-              	1999 My first trip to Europe
- 		  			  </li>
-			 <li>
-              	2000 Published my first book on paper
- 		  			  </li>
-			 <li>
-              		2006 My first trip to Egypt
- 	  			  </li>
-			 <li>
-              	2007 Climbed up to the highest mountain
- 		  			  </li>
-			 <li>
-              	2011 Made my first web app
- 		  			  </li>
-			 <li>
-              	2012 Published my first e-book
- 		  			  </li>
-			  
-              <li>
-              	2012 Graduated from European university (Bachelor of Science in Software Engineering) 
- 		  			  </li>
-			  
-              <li>
-              	2013 Lost my wallet (it was a real tragedy))
- 						  </li>
-			  
-              <li>
-              	2014 Graduated from IT School  “CyberBionic Systematics” 
- 		  			  </li>
-			  
-              <li>
-              	2016 Published my 50<sup>th</sup> e-book
- 		  			  </li>
-			  
-              <li>
-              		2017 Published my 22<sup>nd</sup> book on paper
-   			  </li>
-			  
-              <li>
-              	2018 Made my first JS-Game			  
-			  </li>
-			 </ul>
-        </div>
-      </section>
-
-	  
-	  
-	  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="contacts">
-	      <div class="my-auto">
-          <h2 class="mb-5">Contacts</h2>
-          <ul class="fa-ul mb-0 non-marked">
-          
-<li>
-         <img class="img-fluid" src="img/blackberry-48.png" alt="tel.">  +38 097 824 75 30  Cell Phone     
-               </li>
-
-
-		  <li>
-		  
-		      <li>
-                
-  <img class="img-fluid" src="img/viber-4-48.png" alt="Viber">  +38 050 570 88 10  Viber 
-               </li>
-			         <li>
-         
- <img class="img-fluid" src="img/skype-3-48.png" alt="Skype">   seregabook  
-
-               </li>
-			   
-              <li>
-             <img class="img-fluid" src="img/mail-2-48.png" alt="email"> <a href="mailto:sergei@worker.com">sergei@worker.com</a>  </li>
-          </li>
-            
-            <li>
-			
-                  
- <img class="img-fluid" src="img/github-10-48.png" alt="Github"> <a href="https://github.com/serega1ua"> www.github.com/serega1ua</a>
-               </li>
-            
-            <li>
-                 
-  <img class="img-fluid" src="img/facebook-3-48.png" alt="facebook"> <a href="https://www.facebook.com/serega.novikoff">www.facebook.com/serega.novikoff</a>
-               </li>
-            
-         
-            
-       
-			   
-			      <li>
-                       
- <img class="img-fluid" src="img/email-10-48.png" alt="location">   p.scr.204, Khreshchatyk Street, 22, Kyiv, Ukraine 
- 
-               </li>
-            
-            
-          </ul>
-        </div>
-      </section>
-	  
-	  
     </div>
- 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</nav>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<div class="container-fluid p-0">
+    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+            <h1 class="mb-0">Sergiy
+                <span class="text-primary">Novikov</span>
+            </h1>
+            <div class="subheading mb-5">Front-End web developer
+            </div>
+            <ul class="fa-ul  mb-0 non-marked bones-marked">
+                <li>I like to code because I really enjoy building things (from "lego" to chair to websites and
+                    JS-apps)
+                </li>
+                <li>And I like to be able to take an idea and make it happen on the screen</li>
+                <li>Coding is my passion because coding is the way of the future</li>
+                <li>And I try to make this world a better place</li>
+                <li>And may I tell you a secret? I have a dream to get a job with a good pay )))</li>
+            </ul>
+        </div>
+    </section>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/resume.js"></script>
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+            <h2 class="mb-5">Experience</h2>
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div class="resume-content mr-auto">
+                    <h4 class="mb-0">Web Developer</h4>
+                        <div class="subheading mb-3">Community of Journalists (Kharkiv,&nbsp;Ukraine)</div>
+                        <ul class="fa-ul mb-0 trng-marked non-marked">
+                            <li>Designed and developed entire business website for Community of journalists. Sole
+                                developer and designer for a small group of community newspapers
+                            </li>
+                            <li>HTML, CSS coding of front-end interfaces - including cross-browser support and unit
+                                testing to ensure quality work
+                            </li>
+                            <li>Parse PSD's into HTML and CSS templates (convert PSD files to a working website with
+                                PHP, JavaScript, HTML5 and CSS3)
+                            </li>
+                            <li>Used HTML5 semantic tags and CSS3 features for the development</li>
+                            <li>Created some original pure CSS images: <a
+                                    href="https://github.com/serega1ua/TankModules">github.com/serega1ua/TankModules</a>
+                            </li>
+                        </ul>
+                </div>
+                <div class="resume-date text-md-right">
+                    <span class="text-primary">May 2016 - Present</span>
+                </div>
+            </div>
 
-  </body>
 
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div class="resume-content mr-auto">
+                    <h4 class="mb-0">Creator of E-books</h4>
+                        <div class="subheading mb-3">Digital Services Publisher (Riga,&nbsp;Latvia)</div>
+                        <ul class="fa-ul mb-0 trng-marked non-marked">
+                            <li>Created 550 eBooks in HTML format for all major Ereaders & devices, including Nook,
+                                Kindle (for example <a
+                                        href="https://www.amazon.com/s/ref=dp_byline_sr_ebooks_2?ie=UTF8&text=Sergio+Novikoff&search-alias=digital-text&field-author=Sergio+Novikoff&sort=relevancerank">here</a>
+                                and
+                                <a href="https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Ddigital-text&field-keywords=engBook&rh=n%3A133140011%2Ck%3AengBook">here</a>)
+                            </li>
+                            <li>Created ebooks in HTML format for real clients that can be read on multiple devices
+                                ranging from phones through to Windows desktops
+                            </li>
+                        </ul>
+                </div>
+                <div class="resume-date text-md-right">
+                    <span class="text-primary">May 2012 - December 2016</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+            <h2 class="mb-5">Education</h2>
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div class="resume-content mr-auto">
+                    <h4 class="mb-0">Faculty of Information Systems and&nbsp;Technology | European&nbsp;university,
+                        Kyiv, Ukraine</h4>
+                    <div class="subheading mb-3">Bachelor of Science</div>
+                    <div>Bachelor of Science in Software Engineering(BSSE), Higher education</div>
+                </div>
+                <div class="resume-date text-md-right">
+                    <span class="text-primary">August 2008 - May 2012</span>
+                </div>
+            </div>
+
+            <div class="resume-item d-flex flex-column flex-md-row">
+                <div class="resume-content mr-auto">
+                    <h4 class="mb-0">IT School “CyberBionic&nbsp;Systematics”, Kyiv, Ukraine</h4>
+                    <div class="subheading mb-3">JS Coder</div>
+                    <div>Programmer in JavaScript</div>
+                </div>
+                <div class="resume-date text-md-right">
+                    <span class="text-primary">August 2014 - September 2014</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+            <h2 class="mb-5">Skills</h2>
+            <div class="subheading mb-3">Summary of Skills:</div>
+            <ul class="fa-ul mb-0 bullet-white-marked non-marked">
+                <li>
+                    Front-end Developer with 2+ years of experience designing, developing, and managing complex
+                    e-commerce sites. Specializes in JS and responsive design
+                </li>
+                <li>
+                    Intermediate English level (written and spoken)
+                </li>
+                <li>
+                    Strong understanding of industry trends and content management systems
+               </li>
+                <li>
+                   Ability to improvise, learn new skills in short terms, self-motivated and result-oriented
+                </li>
+            </ul>
+
+            <div class="subheading mb-3 margin-topper">Technical Skills:</div>
+            <ul class="fa-ul mb-0 bullet-white-marked non-marked">
+                <li>
+                    Front-end: CSS3, HTML5, XML, web standards and accessibility, cross-browser compatibility, JSON with
+                    padding
+                </li>
+                <li>
+                    Programming/scripting languages: JavaScript (ES6, jQuery, Bootstrap), basic knowledge of SQL
+                </li>
+                <li>
+                    DB: Oracle
+                </li>
+                <li>
+                    Development tools: WebStorm, Note++, Sublime Text, Photoshop/Fireworks, GitHub Desktop
+                </li>
+                <li>
+                    APIs: Web Storage API, JSON API, Web-Storage API, Web Workers API, Geolocation API, Google Maps
+                    JavaScript API
+                </li>
+                <li>
+                    Version control systems: Git
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+        <div class="my-auto">
+            <h2 class="mb-5">Some Funny Reviews</h2>
+            <p>I have consistently received positive reviews regarding my job performance:</p>
+            <ul class="fa-ul  mb-0 non-marked music-marked">
+                <li><a href="https://www.amazon.com/dp/B00C4L9B6C">www.amazon.com/dp/B00C4L9B6C</a> &#x2935;<br>
+                    “very enjoyable and satisfying“
+                </li>
+                <li><a href="https://www.amazon.com/dp/B00B9GY3IO">www.amazon.com/dp/B00B9GY3IO</a> &#x2935;<br>
+                    “layout are very easy to read”, “with an easy to access look-up system”
+                </li>
+                <li><a href="https://www.amazon.com/dp/B00C4I83X2">www.amazon.com/dp/B00C4I83X2</a> &#x2935;<br>
+                    “it is functional“
+                </li>
+                <li><a href="https://www.amazon.com/dp/B014GBBQIS">www.amazon.com/dp/B014GBBQIS</a> &#x2935;<br>
+                    “Not only does author Novikov provide the phrases in Cyrillic Russian but also in phonetic (Latin)
+                    characters to help those who cannot read Cyrillic. It also helps greatly that in the Phonetic
+                    translations, Novikov underlines accented syllables for the students to help them in the area of
+                    pronunciation. Beats all the Russian phrase books I've purchased in the past.”
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+        <div class="my-auto">
+            <h2 class="mb-5">Timeline</h2>
+            <ul class="fa-ul mb-0 music-second-marked non-marked">
+                <li>
+                    1998 Graduated from National Law Academy
+                </li>
+                <li>
+                    1999 My first trip to Europe
+                </li>
+                <li>
+                    2000 Published my first book on paper
+                </li>
+                <li>
+                    2006 My first trip to Egypt
+                </li>
+                <li>
+                    2007 Climbed up to the highest mountain
+                </li>
+                <li>
+                    2011 Made my first web app
+                </li>
+                <li>
+                    2012 Published my first e-book
+                </li>
+                <li>
+                    2012 Graduated from European university (Bachelor of Science in Software Engineering)
+                </li>
+                <li>
+                    2013 Lost my wallet (it was a real tragedy))
+                </li>
+                <li>
+                    2014 Graduated from IT School “CyberBionic Systematics”
+                </li>
+                <li>
+                    2016 Published my 50<sup>th</sup> e-book
+                </li>
+                <li>
+                    2017 Published my 22<sup>nd</sup> book on paper
+                </li>
+                <li>
+                    2018 Made my first JS-Game
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="contacts">
+        <div class="my-auto">
+            <h2 class="mb-5">Contacts</h2>
+            <ul class="fa-ul mb-0 non-marked">
+                <li>
+                    <img class="img-fluid" src="img/blackberry-48.png" alt="tel."> +38 097 824 75 30 Cell Phone
+                </li>
+                <li>
+                <li>
+                    <img class="img-fluid" src="img/viber-4-48.png" alt="Viber"> +38 050 570 88 10 Viber
+                </li>
+                <li>
+                    <img class="img-fluid" src="img/skype-3-48.png" alt="Skype"> seregabook
+                </li>
+                <li>
+                    <img class="img-fluid" src="img/mail-2-48.png" alt="email"> <a href="mailto:sergei@worker.com">sergei@worker.com</a>
+                </li>
+                <li>
+                    <img class="img-fluid" src="img/github-10-48.png" alt="Github"> <a
+                        href="https://github.com/serega1ua"> www.github.com/serega1ua</a>
+                </li>
+                <li>
+                    <img class="img-fluid" src="img/facebook-3-48.png" alt="facebook"> <a
+                        href="https://www.facebook.com/serega.novikoff">www.facebook.com/serega.novikoff</a>
+                </li>
+                <li>
+                    <img class="img-fluid" src="img/email-10-48.png" alt="location"> p.scr.204, Khreshchatyk Street, 22,
+                    Kyiv, Ukraine
+                </li>
+            </ul>
+        </div>
+    </section>
+</div>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Custom scripts for this template -->
+<script src="js/resume.js"></script>
+
+</body>
 </html>
